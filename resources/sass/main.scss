@@ -37,15 +37,15 @@ body {
             background-color: $cream;
             border: 2pt solid $handf;
             border-radius: 100%;
-            width: 340px;
-            height: 340px;
+            width: 325px;
+            height: 325px;
         }
         .donut-center {
             z-index: 1;
             border: 2pt solid $handf;
             border-radius: 100%;
-            width: 100px;
-            height: 100px;
+            width: 95px;
+            height: 95px;
             display: flex;
             justify-content: center;
             background-color: $bg;
@@ -61,7 +61,7 @@ body {
             border-radius: 0 0 100% 100%;
             
             border-bottom: 3pt solid $handf;
-            left: 105px;
+            left: 120px;
             bottom: 120px;
         }
         .eye-right  {
@@ -71,7 +71,7 @@ body {
             border-radius: 0 0 100% 100%;
             
             border-bottom: 3pt solid $handf;
-            right: 105px;
+            right: 120px;
             bottom: 120px;
         }
 
@@ -96,39 +96,58 @@ body {
             right: 175px;
             bottom: 80px;
         }
+        // EXTREMIDADES SUPERIORES
+        .arm-left {
+            z-index: -1;
+            position: absolute;
+            height: 180px;
+            left: 20px;
+            bottom: 10px;
+            background-color: $handf;
+            border-radius: 50px;
+            border-color: $handf;
+            width: 13px;
+        }
+        .arm-right {
+            z-index: -1;
+            position: absolute;
+            height: 180px;
+            right: 20px;
+            bottom: 25px;
+            background-color: $handf;
+            border-radius: 50px;
+            border-color: $handf;
+            width: 13px;
+        }
+
 
         // EXTREMIDADES INFERIORES
         .foot-left {
-            border: 5pt solid $handf;
+            z-index: -1;
             position: absolute;
-            height: 50px;
-            bottom: -55px;
+            height: 100px;
+            width: 13px;
+            background-color: $handf;
+            border-radius: 50px;
+            border-color: $handf;
+            bottom: -45px;
             left: 140px;
-            .foot {
-                
-                background-color: $handf;
-                
-            }
         }
         // 
         .foot-right {
-            border: 5pt solid $handf;
+            z-index: -1;
             position: absolute;
-            height: 50px;
+            height: 100px;
+            width: 13px;
+            background-color: $handf;
+            border-radius: 50px;
+            border-color: $handf;
             bottom: -55px;
             right: 140px;
-            .foot {
-                
-                background-color: $handf;
-                
-            }
         }
-        // 
-
-
         // SOMBRAS
         .shadown {
-            z-index: -1;
+            z-index: -2;
             position: absolute;
             width: 250px;
             height: 50px;
@@ -136,12 +155,149 @@ body {
             bottom: -80px;
             border-radius: 100%;
         }
-
-
-
         // CANDIES
-        .pistache-0 {
+        .candy-0 {
+            z-index: 10;
             position: absolute;
+            height: 6px;
+            width: 25px;
+            transform: rotate(18deg);
+            top: 55px;
+            background-color: #F5D9B4;
+            border-radius: 50px;
+            border-color: #F5D9B4;   
+        }
+        .candy-1 {
+            z-index: 10;
+            position: absolute;
+            height: 6px;
+            width: 25px;
+            transform: rotate(-18deg);
+            top: 105px;
+            right: 110px;
+            background-color: #F5E9E9;
+            border-radius: 50px;
+            border-color: #F5E9E9;   
+        }
+        .candy-2 {
+            z-index: 10;
+            position: absolute;
+            height: 6px;
+            width: 25px;
+            transform: rotate(-68deg);
+            top: 105px;
+            left: 135px;
+            background-color: #CBD2DB;
+            border-radius: 50px;
+            border-color: #CBD2DB;   
+        }
+        .candy-3 {
+            z-index: 10;
+            position: absolute;
+            height: 6px;
+            width: 20px;
+            transform: rotate(25deg);
+            top: 310px;
+            left: 105px;
+            background-color: #CBD2DB;
+            border-radius: 50px;
+            border-color: #CBD2DB;   
+        }
+        .candy-4 {
+            z-index: 10;
+            position: absolute;
+            height: 6px;
+            width: 20px;
+            transform: rotate(-25deg);
+            top: 300px;
+            right: 105px;
+            background-color: #F5E9E9;
+            border-radius: 50px;
+            border-color: #F5E9E9;
+        }
+        .candy-5 {
+            z-index: 10;
+            position: absolute;
+            height: 6px;
+            width: 20px;
+            transform: rotate(-25deg);
+            top: 200px;
+            right: 105px;
+            background-color: #F5C7B5;
+            border-radius: 50px;
+            border-color: #F5C7B5;   
+        }
+        .candy-6 {
+            z-index: 10;
+            position: absolute;
+            height: 6px;
+            width: 20px;
+            transform: rotate(25deg);
+            top: 170px;
+            right: 50px;
+            background-color: #D6E9DF;
+            border-radius: 50px;
+            border-color: #D6E9DF;   
+        }
+        .candy-7 {
+            z-index: 10;
+            position: absolute;
+            height: 6px;
+            width: 20px;
+            transform: rotate(25deg);
+            top: 130px;
+            right: 180px;
+            background-color: #fff;
+            border-radius: 50px;
+            border-color: #fff;   
+        }
+        .candy-8 {
+            z-index: 10;
+            position: absolute;
+            height: 6px;
+            width: 20px;
+            transform: rotate(25deg);
+            top: 250px;
+            right: 70px;
+            background-color: #F5D9B4;
+            border-radius: 50px;
+            border-color: #F5D9B4;   
+        }
+        .candy-10 {
+            z-index: 10;
+            position: absolute;
+            height: 6px;
+            width: 20px;
+            transform: rotate(-95deg);
+            top: 250px;
+            left: 70px;
+            background-color: #EAE4E1;
+            border-radius: 50px;
+            border-color: #EAE4E1;   
+        }
+        .candy-11 {
+            z-index: 10;
+            position: absolute;
+            height: 6px;
+            width: 20px;
+            transform: rotate(25deg);
+            top: 190px;
+            left: 90px;
+            background-color: #F5D9B4;
+            border-radius: 50px;
+            border-color: #F5D9B4;   
+        }
+        .candy-12 {
+            z-index: 10;
+            position: absolute;
+            height: 6px;
+            width: 20px;
+            transform: rotate(-25deg);
+            top: 130px;
+            left: 70px;
+            background-color: #D6E9DF;
+            border-radius: 50px;
+            border-color: #D6E9DF;   
         }
     }
 }
